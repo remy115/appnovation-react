@@ -1,0 +1,9 @@
+.album-list {
+  max-width:600px;
+  margin:auto;
+  margin-top:50px;
+}
+
+.album-list, .album-list a, .album-list.collection a.collection-item {
+  color:#004f6e;
+}

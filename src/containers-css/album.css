@@ -1,0 +1,94 @@
+.album-photos {
+  border:1px solid #f80;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+
+.album-title {
+  position:relative;
+  width:100%;
+  z-index:0;
+}
+.view-mode {
+  height:100%;
+  position:absolute;
+  right:0;
+  top:0;
+  z-index:inherit;
+}
+
+.view-mode > button + button {
+  margin-left:10px;
+}
+
+.album-photo-grid {
+  display:flex;
+  flex-direction: column;
+  height:auto;
+  justify-content:space-between;
+  overflow: hidden;
+  padding:8px;
+  width:120px;
+}
+.photo-thumb {
+  cursor:pointer;
+  display:block;
+  margin:0;
+  padding:0;
+  width:100%;
+}
+.photo-descr {
+  font-size:0.9em;
+  margin:2px 0;
+  max-height:100px;
+  overflow: hidden;
+  text-align:left;
+}
+
+.photos-table {
+  width:100%;
+}
+.photos-table > thead > tr > th {
+  text-align:center;
+}
+.photos-table .photo-thumb {
+  max-width:120px;
+}
+.photos-table td {
+  padding:10px 8px;
+}
+.td-rate {
+  width:15%;
+}
+.td-image {
+  min-width:120px;
+}
+
+.sorting {
+  display: inline-block;
+  padding-right:11px;
+  position:relative;
+}
+.sorting > span, .sorting > canvas {
+  background:url('../images/arrows.png');
+  background-position: 0 0;
+  border:0px solid #f80;
+  cursor:pointer;
+  height:20px;
+  position: absolute;
+  right:0;
+  top:0;
+  width:10px;
+}
+
+
+.sorting > span.up, .sorting > canvas.up {
+  /* background-color:blue; */
+  background-position: 0 20px;
+}
+
+.sorting > span.down, .sorting > canvas.down {
+  /* background-color:green; */
+  background-position: 0 40px;
+}

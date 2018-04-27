@@ -1,0 +1,28 @@
+.photo-details {
+  align-items:center;
+  display:flex;
+  flex-direction: column;
+  max-width:1000px;
+  position: relative;
+}
+
+.photo-details .photo {
+  max-width:800px;
+  max-height:400px;
+}
+
+.photo-details .description {
+  font-size:1.1em;
+  margin:20px 0 10px 0;
+}
+.photo-details .photo-rate {
+  display:flex;
+  justify-content:center;
+  width:100%;
+}
+
+.close-btn {
+  position: absolute;
+  top:-20px;
+  right:-20px;
+}
